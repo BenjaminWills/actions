@@ -15,3 +15,5 @@ jobs:
     steps:
       - name: echo
         run: echo "Look, I'm a string!"
+      - name: List visible directories
+        run: ls -a
