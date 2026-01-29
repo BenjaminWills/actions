@@ -11,7 +11,7 @@ on:
 jobs:
   echo:
     name: Echo a string
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: echo
         run: echo "Look, I'm a string!"
