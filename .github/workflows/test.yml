@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Clone repository content
-      - uses: actions/checkout
+      - uses: actions/checkout@v6
       # Install Python
       - name: Install Python
-        uses: actions/setup-python
+        uses: actions/setup-python@v6
       # Install requirements
       - name: Install requirements
         run: pip install -r requirements.txt
