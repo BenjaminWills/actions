@@ -1,0 +1,17 @@
+name: echo
+
+# Trigger
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+# Action
+jobs:
+  echo:
+    name: Echo a string
+    run-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Look, I'm a string!"
