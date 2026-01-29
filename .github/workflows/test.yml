@@ -1,0 +1,27 @@
+name: Pytest Python Files
+
+# Trigger
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '**.py'
+    branches:
+      - main
+
+# Action
+jobs:
+  pytest:
+    name: Pytest Python Code
+    runs-on: ubuntu-latest
+    steps:
+      # Clone repository content
+      - uses: actions/checkout
+      # Install Python
+      - name: Install Python
+        uses: actions/setup-python
+      # Install requirements
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Test the Code
+        run: pytest test_main.py
