@@ -1,0 +1,11 @@
+name: echo
+on:
+  workflow_dispatch
+
+jobs:
+  echo:
+    name: Echo a string
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Look!"
