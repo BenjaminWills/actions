@@ -8,3 +8,4 @@ def find_longest(arr):
 
 if __name__ == "__main__":
     print(find_longest(["yellow", "red", "blue", "green"]))
+    print("something else")
