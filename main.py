@@ -3,7 +3,7 @@ def find_longest(list_of_strings: list) -> str:
     for i in range(1, len(list_of_strings)):
         if len(list_of_strings[i]) > len(longest):
             longest = list_of_strings[i]
-            # break the code my turn
+            # break the code breaking it more
         return longest
 
 
