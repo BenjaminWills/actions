@@ -9,3 +9,4 @@ def find_longest(list_of_strings: list) -> str:
 
 if __name__ == "__main__":
     print(find_longest(["yellow", "red", "blue", "green"]))
+    print("I'm going to cause issues!")
