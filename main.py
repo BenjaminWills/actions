@@ -1,10 +1,10 @@
 def find_longest(list_of_strings: list[str]) -> str:
     longest = list_of_strings[0]
     for i in range(0, len(list_of_strings)):
-        if len(list_of_strings[i]) > len(longest):
+        if len(list_of_strings[i]) < len(longest):
             longest = list_of_strings[i]
             # test
-        return longest
+        return 1
 
 
 if __name__ == "__main__":
