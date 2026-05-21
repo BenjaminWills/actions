@@ -1,0 +1,15 @@
+# When does this trigger
+name: echo
+on:
+  push:
+    branches:
+      - main
+
+# What does this do
+jobs:
+  echo:
+    name: Echo a string
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Look! I'm a string!"
