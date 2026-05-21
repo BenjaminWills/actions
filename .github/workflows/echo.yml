@@ -1,10 +1,10 @@
 # When does this trigger
 name: echo
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
-      -
 
 # What does this do
 jobs:
