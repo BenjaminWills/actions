@@ -1,0 +1,27 @@
+name: Tests the code in the repository
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Every time I push to the main branch of my repository
+# I want to run all of the tests
+# I need to push my code to the VM running the workflow
+# I need to install python / pip on the VM running the workflow
+# I need to run pytest on the VM
+
+jobs:
+  test_code:
+    name: Test our code against the tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout our files to the workflow VM
+        uses: actions/checkout@v7
+      - name: Install Python on workflow VM
+        uses: actions/setup-python@v7
+      - name: Install our requirements
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: pytest
