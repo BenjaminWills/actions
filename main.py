@@ -1,8 +1,8 @@
-def find_longest(arr):
-    longest = arr[1]
-    for i in range(1, len(arr)):
-        if len(arr[i]) > len(longest):
-            longest = arr[i]
+def find_longest(input_list: list) -> object:
+    longest = input_list[1]
+    for i in range(1, len(input_list)):
+        if len(input_list[i]) > len(longest):
+            longest = input_list[i]
         return longest
 
 
