@@ -1,6 +1,7 @@
 name: Tests the code in the repository
 
 on:
+  pull_request:
   push:
     branches:
       - main
