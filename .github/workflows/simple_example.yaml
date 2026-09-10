@@ -1,0 +1,22 @@
+# Whenever I push to github, 
+# I want something to run that prints a message saying "You've successfully pushed to github"
+
+# Name the workflow
+name: Print success
+
+# When does this workflow actually trigger
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # This just makes this workflow manually runnable 
+
+# What does the workflow do when it runs?
+jobs:
+  success_notification:
+    name: Echo a string that says we've been successful
+    runs-on: ubuntu-latest # equivalent to AMI
+    steps:
+      - name: Echo success
+        run: echo "You've successfully pushed to github"
+
