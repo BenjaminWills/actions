@@ -1,0 +1,16 @@
+# Define when the job runs
+on:
+  workflow_dispatch: # I want this workflow to be manually triggerable
+  push:
+    branches:
+      - main # I want this to run every time I push to the "main" branch
+
+# What the job should do when it runs
+
+jobs:
+  echo:
+    name: Echo a string.
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Look at me! I'm echoing."
