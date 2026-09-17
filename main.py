@@ -2,7 +2,6 @@ def find_longest(arr):
     longest = arr[1]
     for i in range(1, len(arr)):
         if len(arr[i]) > len(longest):
-            longest = arr[i]
         return longest
 
 
